@@ -1,0 +1,8 @@
+flask
+gtts
+SpeechRecognition
+yt_dlp
+pydub
+audioconverter
+genai
+
