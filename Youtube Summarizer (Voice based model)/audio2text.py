@@ -3,7 +3,7 @@ import json
 import ai 
 
 
-def audio2text(audio='Downloded_audio\\transc.wav'):
+def audio2text(audio='./Downloaded_audio/demo.wav'):
     r = sr.Recognizer()
     with sr.AudioFile(audio) as source:
         print('Recogonizing file..')
