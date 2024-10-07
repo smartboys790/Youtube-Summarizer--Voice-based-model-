@@ -6,12 +6,12 @@ from pydub import AudioSegment
 
 def download_audio(url):
 
-    command = f"yt-dlp -f bestaudio --extract-audio --audio-format mp3 {url} -o Downloded_audio/transcribe "
+    command = f"torsocks yt-dlp -f bestaudio --extract-audio --audio-format mp3 {url} -o Downloaded_audio/transcribe "
     subprocess.call(command, shell=True)
 
-# assign files 
-    input_file = "Downloded_audio/transcribe.mp3"
-    output_file = "./audio/transc.wav"
+    # assign files 
+    input_file = "./Downloaded_audio/summary.mp3"
+    output_file = "./test.wav"
 
     # convert mp3 file to wav file 
     sound = AudioSegment.from_mp3(input_file) 
